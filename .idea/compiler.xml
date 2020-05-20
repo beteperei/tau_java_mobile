@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tau_java_mobile" />
         <module name="Project01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tau_java_mobile" target="7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -16,11 +16,13 @@ public class WithConfigurationTest {
 
     @BeforeAll
     public void beforeAll(){
-        driver = browserGetter.getFirefoxDriver();
+
+        driver = browserGetter.getDriver();
     }
 
     @AfterAll
     public void afterAll(){
+
         driver.quit();
     }
 
