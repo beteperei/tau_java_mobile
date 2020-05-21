@@ -13,7 +13,7 @@ public class BrowserGetter {
 
     }
     public WebDriver getChromeDriver(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\Desktop\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\Desktop\\chromedriver_win32\\chromedriver_83.exe");
         WebDriver driver = new ChromeDriver();
         return driver;
     }

@@ -8,26 +8,22 @@ import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-//TODO: Get real drivers
+//TODO: Get Firefox Driver
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class WithConfigurationTest {
-    private BrowserGetter browserGetter = new BrowserGetter();
+    private final BrowserGetter browserGetter = new BrowserGetter();
     private WebDriver driver;
 
     @BeforeAll
     public void beforeAll(){
-
         driver = browserGetter.getDriver();
     }
 
     @AfterAll
-    public void afterAll(){
-
-        driver.quit();
-    }
+    public void afterAll(){ driver.quit(); }
 
     @Test
-    public void justATest(){
+    public void chromeTest(){
         driver.get("https://www.google.com");
         assertEquals("Google",driver.getTitle());
     }

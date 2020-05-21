@@ -10,13 +10,11 @@ import org.openqa.selenium.WebDriver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class SeleniumTest {
-    private BrowserGetter browserGetter = new BrowserGetter();
+    private final BrowserGetter browserGetter = new BrowserGetter();
     private WebDriver driver;
 
     @BeforeAll
-    public void beforeAll() {
-        driver = browserGetter.getChromeDriver();
-    }
+    public void beforeAll() { driver = browserGetter.getChromeDriver(); }
 
     @AfterAll
     public void afterAll() {
