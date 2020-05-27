@@ -1,7 +1,5 @@
 package chapter3;
 
-import sun.java2d.SurfaceDataProxy;
-
 import java.util.Scanner;
 
 /*
